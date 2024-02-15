@@ -1,0 +1,120 @@
+header {
+  margin: 0;
+  border-bottom: 0.5mm solid #ECECEC;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 7.5%;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+}
+
+main {
+  padding: 12.5vh 7.5%;
+}
+
+input[type=text] {
+  padding: 5px;
+  border: 1px solid #DBDBDB;
+  border-radius: 2.5px;
+  color: #9f9f9f;
+  background-color: #FAFAFA;
+  width: 100%;
+}
+
+input:focus {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+::placeholder {
+  text-align: center; 
+}
+
+/* Classes */
+.header_icon {
+  height: 30px;
+}
+
+.post {
+  max-width: 800px;
+  max-height:1000px;
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DBDBDB;
+  border-radius: 2.5px;
+}
+
+.post_user {
+  width: 100%;
+  height: 3.5rem;
+  padding: 1.5% 2%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.post_user_icon {
+  border-radius: 50%;
+  margin-right: 10px
+}
+
+.post_image {
+  aspect-ratio: 1 / 1
+}
+/* End Classes */
+
+/* IDs */
+#top_bar {
+  width: 100%;
+}
+
+#search_submit {
+  display: none;
+}
+
+#search {
+  width: 15vw;
+}
+
+#instagram_logo {
+  padding-left: 5px;
+  padding-right: 20px;
+  margin: 20px 0px 20px 0px;
+  border-right: 0.25mm solid black;
+}
+
+#instagram_text {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#logos {
+  display: flex;
+  align-items: center;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15vw;
+}
+/* End IDs */
