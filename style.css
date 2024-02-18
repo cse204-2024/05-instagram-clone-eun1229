@@ -30,7 +30,6 @@ main {
   min-width: 900px;
   height: 100%;
   box-sizing: border-box;
-  background: red;
 }
 
 p {
@@ -45,7 +44,6 @@ aside {
   height: 100%;
   margin: 50px 7.5% 12.5vh 10px;
   box-sizing: border-box;
-  background: blue;
 }
 
 input[type=text] {
@@ -160,6 +158,7 @@ input:focus::placeholder {
 .profile {
   min-width: none;
   height: 20%;
+  border: 1px solid #ECECEC;
 }
 
 .suggestions {
@@ -216,8 +215,8 @@ input:focus::placeholder {
   color: white;
   border: none;
   border-radius: 5%/10%;
-  width: 130px;
-  height: 30px;
+  width: 140px;
+  height: 35px;
   padding: 7.5px 0px 7.5px 0px;
 }
 
@@ -266,7 +265,6 @@ input:focus::placeholder {
 #stories{
   position: fixed;
   height: 50%;
-  background-color: green;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 20%;
@@ -278,15 +276,42 @@ input:focus::placeholder {
   position: fixed;
   width: 20%;
   overflow-x: hidden;
+  border-bottom: 0.5mm solid #ECECEC;
+  height: 55px;
+  display: flex;
+  padding-bottom: 9px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#profile > .user_icon{
+  border-radius: 50%;
+  height: 45px;
+  width: 45px
+}
+
+#profile > div {
+  margin-left: 20px
+}
+
+#profile > div > p{
+  font-size: small;
+  color: #999999;
+  margin: 0px;
+}
+
+#profile > div > strong{
+  margin-bottom: 0px
 }
 
 #about {
-  background-color: #999999;
   position: fixed;
   margin-top: 405px;
   width: 20%;
   min-width: 20%;
   overflow-x: hidden;
+  box-shadow: 0px -7.5px 10px white;
+  border-top: 0.5mm solid #ECECEC;
 }
 
 #suggested_profiles {
@@ -297,6 +322,37 @@ input:focus::placeholder {
 #suggestions_header {
   color: #999999;
   margin: 10px 16px 0px 16px
+}
+
+#stories > figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px;
+  margin-bottom: 20px
+}
+
+#stories > figure > div {
+  margin-left: 20px;
+}
+
+#stories > figure > div > p{
+  color: #999999
+}
+
+#stories > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 10px;
+  margin-bottom: 0px;
+  font-size: small;
+}
+
+#stories > div:first-child > p:first-child{
+  color: #999999;
+  font-weight: bold;
 }
 
 /* End IDs */
