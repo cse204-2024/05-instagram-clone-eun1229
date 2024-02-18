@@ -4,6 +4,9 @@
     <title>Instagram Clone</title>
     <meta name="description" content="Responsive Instagram clone">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -23,20 +26,70 @@
         <img src="images/user.png" alt="user icon" class="header_icon">
       </section>
     </header>
-    <main>
-      <section class="post">
-        <section class="post_user">
-          <img src="images/city_profile.jpg" alt="city" height="35px" width="35px" class="post_user_icon">
-          <p>username</p>
+    <div class="container">
+      <main>
+        <section class="post">
+          <section class="post_user">
+            <img src="images/city_profile.jpg" alt="city" height="35px" width="35px" class="post_user_icon">
+            <strong>username</strong>
+          </section>
+          <img src="images/landscape_post.jpeg" alt="ocean_landscape" class="post_image">
+          <section class="post_buttons">
+            <img src="images/heart.png" alt="heart icon" class="post_icon">
+            <img src="images/speech_bubble.png" alt="speech icon" class="post_icon">
+            <img src="images/upload.png" alt="upload icon" class="post_icon">
+            <img src="images/bookmark.png" alt="bookmark icon" class="bookmark_icon">
+          </section>
+          <section class="post_comments">
+            <p><strong>12 likes</strong></p>
+            <p><strong>username </strong>view outside my mansion</p>
+            <p class="time_stamp">3 HOURS AGO</p>
+            <p class="comment_input">Add a comment...<strong class="comments_ellipses">...</strong></p>
+          </section>
         </section>
-        <img src="images/landscape_post.jpeg" alt="ocean_landscape" class="post_image">
-        <section class="post_buttons">
-          here
+        <section class="post">
+          <section class="post_user">
+            <img src="images/city_profile.jpg" alt="city" height="35px" width="35px" class="post_user_icon">
+            <strong>username</strong>
+          </section>
+          <img src="images/landscape_post.jpeg" alt="ocean_landscape" class="post_image">
+          <section class="post_buttons">
+            <img src="images/heart.png" alt="heart icon" class="post_icon">
+            <img src="images/speech_bubble.png" alt="speech icon" class="post_icon">
+            <img src="images/upload.png" alt="upload icon" class="post_icon">
+            <img src="images/bookmark.png" alt="bookmark icon" class="bookmark_icon">
+          </section>
+          <section class="post_comments">
+            <p><strong>12 likes</strong></p>
+            <p><strong>username </strong>view outside my mansion</p>
+            <p class="time_stamp">3 HOURS AGO</p>
+            <p class="comment_input">Add a comment...<strong class="comments_ellipses">...</strong></p>
+          </section>
         </section>
-        <section class="post_comments">
-          here
+        <section class="suggestions">
+          <strong id="suggestions_header">Suggestions for you</strong>
+          <div id="suggested_profiles">
+            <figure class="suggested_profile">
+              <div style="">
+                <p>&#10005;</p>
+                <img src="images/city_profile.jpg" alt="city" height="60px" width="60px" class="user_icon">
+              </div>
+              <div class="suggested_name">
+                <strong>CONAN</strong>
+                <p>popular</p>
+              </div>
+              <button type="submit" class="follow_button">Follow</button>
+            </figure>
+            <figure class="suggested_profile">Here</figure>
+            <figure class="suggested_profile">Here</figure>
+          </div>
         </section>
-      </section>
-    </main>
+      </main>
+      <aside>
+          <section id="profile">Here hello gelli;elihhhjkjheeeefrrfkhjrfufuwhhjhhdfee</section>
+          <section id="stories">Here hello gelli;elihhhjkjheeeefrrfkhjrfufuwhhjhhdfee</section>
+          <section id="about">Here hello gelli;elihhhjkjheeeefrrfkhjrfufuwhhjhhdfee</section>
+      </aside>
+    </div>
   </body>
 </html>
