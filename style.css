@@ -63,12 +63,18 @@ input[type=text] {
   color: #9f9f9f;
   background-color: #FAFAFA;
   width: 100%;
+  font-size: 60%;
+  background-image: url("images/magnifying.png");
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 35% center;
 }
 
 input:focus {
   background-color: white;
   border: 1px solid #eaeaea;
   outline: none;
+  background-image: none;
 }
 
 input:focus::placeholder {
@@ -146,7 +152,7 @@ input:focus::placeholder {
 }
 
 .post_user > strong {
-  font-size: 2.5vmin
+  /* font-size: 2.5vmin */
 }
 
 .bookmark_icon {
@@ -201,7 +207,8 @@ input:focus::placeholder {
   box-sizing: border-box;
   max-width: 100%;
   height: 15%;
-  padding-bottom: 5%
+  padding-bottom: 5%;
+  overflow: hidden;
 }
 
 .suggested_profile {
@@ -223,6 +230,7 @@ input:focus::placeholder {
   height: 100%;
   box-sizing: border-box;
   margin-top: 4%;
+
 }
 
 .suggested_profile > p:first-child {
@@ -482,6 +490,15 @@ input:focus::placeholder {
 #stories > div:first-child > p:first-child{
   color: #999999;
   font-weight: bold;
+}
+
+#stories > figure > img { /* https://www.geeksforgeeks.org/how-to-draw-a-circle-with-gradient-border-using-css/ */
+  border: solid;
+  border-image: linear-gradient(to top, rgb(255, 49, 142), rgb(255, 128, 0)) 1 / 5px;
+  border-radius: 50%;
+  background-image: linear-gradient( 
+    to bottom,  rgb(255, 128, 0) 0%, 
+    rgb(255, 49, 142) 100%); 
 }
 
 /* End IDs */
